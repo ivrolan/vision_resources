@@ -1,16 +1,38 @@
-cup
-box
-tea spoon
-pencil
-padlock
-gripper
-tin
-bowl
-chain
-apple
-dice
+trofast
+black bin
+green bin
+bookshelf
+yellow container
+white conteiner
+long table
+stair drawer
+tall table
+try
+master chef scan
+cracker box
+sugar box
+tomato soup scan
+mustard bottle
+tuna fish can
+pudding box
+gelatin box
+potted meat can
 banana
 strawberry
+apple
 lemon
-person
-cookies box
+peach
+pear
+orange
+plum
+pitcher base
+windex bottle
+bowl
+mug
+sponge
+skillet
+skillet lid
+plate
+fork
+spoon
+knife
