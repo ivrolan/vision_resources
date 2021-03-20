@@ -1,0 +1,79 @@
+path:
+        /home/ubuntu/catkin_ws/src/gb_robots/tiago_sim_robocup2021/models
+
+trofast:
+        trofast
+black bin:
+        wrc_bin_black
+green bin:
+        wrc_bin_green
+bookshelf:
+        wrc_bookshelf
+yellow container:
+        wrc_container_a # color check is needed
+white container:
+        wrc_container_b
+long table:
+        wrc_long_table
+stair drawer:
+        wrc_stair_like_drawer
+tall table:
+        wrc_tall_table
+toy:
+        ycb_072-a_toy_airplane # there are abcde types of toys
+master chef can:
+        ycb_002_master_chef_can
+cracker box:
+        ycb_003_cracker_box
+sugar box:
+        ycb_004_sugar_box
+tomato soup can:
+        ycb_005_tomato_soup_can
+mustard bottle:
+        ycb_006_mustard_bottle
+tuna fish can:
+        ycb_007_tuna_fish_can
+pudding box:
+        ycb_008_pudding_box
+gelatin box:
+        ycb_009_gelatin_box
+potted meat can:
+        ycb_010_potted_meat_can
+banana:
+        ycb_011_banana
+strawberry:
+        ycb_012_strawberry
+apple:
+        ycb_013_apple
+lemon:
+        ycb_014_lemon
+peach:
+        ycb_015_peach
+pear:
+        ycb_016_pear
+orange:
+        ycb_017_orange
+plum:
+        ycb_018_plum
+pitcher base:
+        ycb_019_pitcher_base
+windex bottle:
+        ycb_022_windex_bottle
+bowl:
+        ycb_024_bowl
+mug:
+        ycb_025_mug
+sponge:
+        ycb_026_sponge
+skillet:
+        ycb_027_skillet
+skillet lid:
+        ycb_028_skillet_lid
+plate:
+        ycb_029_plate
+fork:
+        ycb_030_fork
+spoon:
+        ycb_031_spoon
+knife:
+        ycb_032_knife
