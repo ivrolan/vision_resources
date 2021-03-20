@@ -1,0 +1,16 @@
+cup
+box
+tea spoon
+pencil
+padlock
+gripper
+tin
+bowl
+chain
+apple
+dice
+banana
+strawberry
+lemon
+person
+cookies box
