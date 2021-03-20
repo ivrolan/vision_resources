@@ -3,15 +3,15 @@ black bin
 green bin
 bookshelf
 yellow container
-white conteiner
+white container
 long table
 stair drawer
 tall table
-try
-master chef scan
+toy
+master chef can
 cracker box
 sugar box
-tomato soup scan
+tomato soup can
 mustard bottle
 tuna fish can
 pudding box
