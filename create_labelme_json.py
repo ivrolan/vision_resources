@@ -104,7 +104,7 @@ def main():
         if f.endswith(img_type):
             img = f[:f.find(img_type)]
             labelme_json = LABELME_FILE_TEMPLATE
-            labelme_json["label"] = str(sys.argv[2])
+            labelme_json["shapes"][0]["label"] = str(sys.argv[2])
             labelme_json["imagePath"] = img + img_type
             data = labelme.LabelFile.load_image_file(img + img_type)
             labelme_json["imageData"] = base64.b64encode(data).decode('utf-8')
