@@ -33,6 +33,28 @@ def getJsonTemplate():
 
     return labelme_file_template
 
+LABELME_FILE_TEMPLATE = {
+
+        "version" : "4.5.7",
+        "flags" : {},
+        "shapes": [{
+            "label" : "test",
+            "points" : [
+                [
+                1,
+                2
+                ],
+                [3,4]
+            ],
+        "group_id" : None,
+        "shape_type" : "polygon",
+        "flags" : {}
+        
+        }],
+        "imagePath" : "blabla.jpg",
+        "imageData" : "encoded"
+
+    }
 def getCountourPoints(filename, mask_filename):
     #print("mask:", mask_filename)
     img = cv2.imread(mask_filename, cv2.IMREAD_GRAYSCALE)
@@ -67,24 +89,28 @@ def main():
     
     if len(sys.argv) != 3:
         print("2 parameters needed. [path] [label_name]")
-        return
+        sys.exit(1)
 
     img_type = ".jpg"
-    os.chdir(sys.argv[1])
+
+    try:
+        os.chdir(sys.argv[1])
+    except:
+        print("Cannot change directory to", sys.argv[1])
+        sys.exit(1)
+
     for f in os.listdir("."):
         
         if f.endswith(img_type):
             img = f[:f.find(img_type)]
-            labelme_json = getJsonTemplate()
+            labelme_json = LABELME_FILE_TEMPLATE
             labelme_json["label"] = str(sys.argv[2])
-            labelme_json["imagePath"] = img + ".jpg"
-            #labelme_json["imageData"] = str(base64.b64encode(open(img + ".jpg", "rb").read().decode('utf-8')))
-            data = labelme.LabelFile.load_image_file(img + ".jpg")
+            labelme_json["imagePath"] = img + img_type
+            data = labelme.LabelFile.load_image_file(img + img_type)
             labelme_json["imageData"] = base64.b64encode(data).decode('utf-8')
-            labelme_json["shapes"][0]["points"] = getCountourPoints(img + ".jpg", "masks/" + img + "_mask.pbm")
+            labelme_json["shapes"][0]["points"] = getCountourPoints(img + img_type, "masks/" + img + "_mask.pbm")
 
             #print(json.dumps(labelme_json, indent=4))
-            
             
             f= open(img + ".json","w")
 
@@ -94,3 +120,4 @@ def main():
     
 if __name__ == "__main__":
     main()
+    sys.exit(0)
